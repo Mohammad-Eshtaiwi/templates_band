@@ -1,9 +1,26 @@
 :root {
   --main-gray: #ccc;
   --main-white: #fff;
+  --main-red: rgb(255, 69, 0);
+  --black-o: rgba(0, 0, 0, 0.6);
 }
 body {
   font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+figure {
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
 }
 a:hover {
   text-decoration: none;
@@ -11,7 +28,7 @@ a:hover {
 .btn {
   padding: 14px 25px;
   display: inline-block;
-  color: var(--main-gray);
+  color: var(--main-white);
   background-color: #000;
   font-size: 1rem;
   font-weight: bold;
@@ -29,10 +46,22 @@ a:hover {
 .text-left {
   text-align: left;
 }
+.text-justify {
+  text-align: justify;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.title {
+  letter-spacing: 4px;
+  font-size: 32px;
+}
 /* dropdown */
 .dropdown {
   display: none;
   position: absolute;
+  z-index: 100;
   background-color: var(--main-gray);
   width: 150px;
   text-align: left;
@@ -53,14 +82,20 @@ a:hover {
   padding: 14px 10px;
 }
 .dropdown ul li a:hover {
-  color: #000;
-  background-color: var(--main-white);
+  color: #000 !important;
+  background-color: var(--main-white) !important;
+}
+nav .nav-links ul li:hover .dropdown {
+  display: block;
 }
 /*  navbar */
 nav {
   background-color: #000;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 nav .nav-links ul {
   display: flex;
@@ -71,10 +106,132 @@ nav .nav-links ul {
 nav .nav-links ul li {
   position: relative;
 }
+nav .nav-links ul li:hover a {
+  background-color: var(--main-gray);
+  color: black;
+}
 nav .nav-links ul li:hover .dropdown {
   display: block;
 }
 .search .btn:hover {
-  background-color: rgb(255, 69, 0);
+  background-color: var(--main-red);
   color: var(--main-white);
+}
+/* Header */
+
+header .location {
+  position: relative;
+}
+header .location:not(:first-child) {
+  display: none;
+}
+header .location img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+header .location .details {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+header .location .details h2 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+header .location .details p {
+  margin-bottom: 35px;
+}
+/* band */
+.band {
+  padding: 60px 0;
+}
+
+.band h3 {
+  opacity: 0.6;
+}
+.band p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.band .members {
+  display: flex;
+  justify-content: space-around;
+}
+.band .members figure {
+  margin-right: 15px;
+}
+.band .members figure figcaption {
+  margin-bottom: 20px;
+}
+.band .members figure img {
+  width: 150px;
+  border-radius: 4px;
+}
+/* tours */
+.tours {
+  background-color: #000;
+  padding: 70px 0;
+}
+.tours h2 {
+  color: #fff;
+}
+.tours p {
+  color: var(--main-gray);
+}
+
+.tours .dates {
+  background-color: var(--main-white);
+}
+
+.tours .dates .date p {
+  margin-bottom: 0;
+  color: var(--black-o);
+  padding: 10px;
+  border-bottom: 1px solid var(--main-gray);
+}
+.tours .dates .date p span.sold-out {
+  display: inline-block;
+  background-color: var(--main-red);
+  padding: 3px 10px;
+  color: var(--main-white);
+  margin-left: 10px;
+  font-weight: 500;
+}
+.tours .dates .date p span.available {
+  display: block;
+  color: var(--main-white);
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0 8px;
+  float: right;
+  margin-right: 20px;
+}
+.tours .tickets {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.tours .tickets .ticket {
+  background-color: var(--main-white);
+  margin-right: 20px;
+}
+.tours .tickets .ticket img {
+  width: 100%;
+}
+.tours .tickets .ticket .details {
+  padding: 20px;
+}
+.tours .tickets .details h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tours .tickets .details .date {
+  color: var(--black-o);
+}
+.tours .tickets .details p {
+  color: #000;
 }

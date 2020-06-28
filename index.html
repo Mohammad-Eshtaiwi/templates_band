@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- navbar start -->
     <nav class="uppercase text-center">
       <div class="nav-links">
         <ul>
@@ -17,7 +18,10 @@
           <li><a href="" class="btn">tour</a></li>
           <li><a href="" class="btn">contact</a></li>
           <li>
-            <a href="" class="btn">more</a>
+            <a href="" class="btn">
+              more
+              <i class="fa fa-caret-down"></i>
+            </a>
             <div class="dropdown">
               <ul>
                 <li><a href="">merchandise</a></li>
@@ -34,5 +38,128 @@
         </a>
       </div>
     </nav>
+    <!-- navbar end -->
+    <!-- header start -->
+    <header>
+      <section class="location los-angeles">
+        <img src="./images/Los-Lngeles.jpg" alt="" />
+        <article class="details">
+          <h2>Los Angeles</h2>
+          <p><b>We had the best time playing at Venice Beach!</b></p>
+        </article>
+      </section>
+      <section class="location chicago">
+        <img src="./images/chicago.jpg" alt="" />
+        <article class="details">
+          <h2>Chicago</h2>
+          <p><b>Thank you, Chicago - A night we won't forget.</b></p>
+        </article>
+      </section>
+      <section class="location new-york">
+        <img src="./images/New-York.jpg" alt="" />
+        <article class="details">
+          <h2>New York</h2>
+          <p><b>The atmosphere in New York is lorem ipsum.</b></p>
+        </article>
+      </section>
+    </header>
+    <!-- header end -->
+    <main>
+      <section class="band">
+        <div class="container">
+          <h1 class="text-center title">THE BAND</h1>
+          <h3 class="text-center">We love music</h3>
+          <p class="text-justify">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <div class="members">
+            <figure>
+              <figcaption class="text-center">Eshtaiwi</figcaption>
+              <img src="./images/bandmember.jpg" alt="bandmember" />
+            </figure>
+            <figure>
+              <figcaption class="text-center">Eshtaiwi</figcaption>
+              <img src="./images/bandmember.jpg" alt="bandmember" />
+            </figure>
+            <figure>
+              <figcaption class="text-center">Eshtaiwi</figcaption>
+              <img src="./images/bandmember.jpg" alt="bandmember" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="tours">
+        <div class="container">
+          <h2 class="title text-center">TOUR DATES</h2>
+          <p class="text-center">Remember to book your tickets!</p>
+          <div class="dates">
+            <div class="date">
+              <p>
+                September
+                <span class="sold-out">Sold out</span>
+              </p>
+            </div>
+            <div class="date">
+              <p>
+                October
+                <span class="sold-out">Sold out</span>
+              </p>
+            </div>
+            <div class="date">
+              <p>
+                November
+                <span class="available">3</span>
+              </p>
+            </div>
+          </div>
+          <div class="tickets">
+            <div class="ticket">
+              <img src="./images/newyork.jpg" alt="" />
+              <div class="details">
+                <h2>New York</h2>
+                <p class="date">
+                  Fri 27 Nov 2016
+                </p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="" class="btn">Buy Tickets</a>
+              </div>
+            </div>
+            <div class="ticket">
+              <img src="./images/paris.jpg" alt="" />
+              <div class="details">
+                <h2>Paris</h2>
+                <p class="date">
+                  Fri 28 Nov 2016
+                </p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="" class="btn">Buy Tickets</a>
+              </div>
+            </div>
+            <div class="ticket">
+              <img src="./images/sanfran.jpg" alt="" />
+              <div class="details">
+                <h2>San Francisco</h2>
+                <p class="date">
+                  Fri 29 Nov 2016
+                </p>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="" class="btn">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
